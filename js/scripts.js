@@ -3,13 +3,14 @@
 var pingPong = function(enter) {
 	for (index = enter; index >= 0; index -= 1) {
 		if ((index % 3 === 0) && (index % 5 === 0))  {
-			$("#results").append("<li>" + "PINGPONG!" + "</li>");
+			$("#results").append("<p>" + "PING PONG!" + "</p>");
 	  } else if (index % 3 === 0){
-	  	$("#results").append("<li>" + "PING" + "</li>");
+	  	$("#results").append("<p>" + "PING" + "</p>");
 		} else if (index % 5 === 0){
-				$("#results").append("<li>" + "PONG" + "</li>");
+				$("#results").append("<p>" + "PONG" + "</p>");
 		} else {
-			$("#results").append("<li>" + index + "</li>");
+			$("#results").append("<p>" + index + "</p>");
+
 	  }
 	}
 };

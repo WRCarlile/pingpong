@@ -1,15 +1,15 @@
 # Ryan Carlile
 
 #### Ping Pong
-### http://wrcarlile.github.io
+### http://wrcarlile.github.io/pingpong
 #### By Ryan Carlile
 
 ## Description
-
-.
+	A JavaScript application that converts numbers to strings "ping" and "pong" based
+	on what number they are divisible buy.
 ## Setup/Installation Requirements
 
-* Use the landing page to link to different GitHub repositories.
+* Enter value to play.
 
 
 ## I am an intro student so I'm sure there are some strange things going on with my code.
