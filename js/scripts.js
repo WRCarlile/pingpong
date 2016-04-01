@@ -1,28 +1,19 @@
-// business logic starts
-var ping = "ping!";
+/* business logic starts*/
 
-var pingPong =function(enter) {
-	for(index= enter; index >= 0; index-=1) {
-
-
-		$("#results").append("<li>" + index + "</li>");
+var pingPong = function(enter) {
+	for (index = enter; index >= 0; index -= 1) {
+		if ((index % 3 === 0) && (index % 5 === 0))  {
+			$("#results").append("<li>" + "PINGPONG!" + "</li>");
+	  } else if (index % 3 === 0){
+	  	$("#results").append("<li>" + "PING" + "</li>");
+		} else if (index % 5 === 0){
+				$("#results").append("<li>" + "PONG" + "</li>");
+		} else {
+			$("#results").append("<li>" + index + "</li>");
+	  }
 	}
-
- // if (enter % 3 === 0 ) {
- // 	// pingTrue = true;
- // 	alert("true");
- //
- // 	$("#results").text("ping");
- //
- // } else {
- // 	alert("enter a number")
- // // 	$('#userInput').addClass('has-error');
- // };
 };
-
 // business logic ends
-
-
 
 
 /* User logic */
@@ -31,6 +22,9 @@ $(document).ready(function(){
 		event.preventDefault();
 		var userInput = parseInt($('#userInput').val());
 		pingPong(userInput);
+		// }else {
+		// 	alert("enter a number")
+		// // 	$('#userInput').addClass('has-error');
 
 	});
 });
